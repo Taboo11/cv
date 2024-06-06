@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  /* line-height: 20px; */
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: rgb(254, 188, 44);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+a:hover {
+  color: rgb(187, 240, 74);
+  transform: scale(1.1);
+}
+
+.page {
+  max-width: 1270px;
+  width: 100%;
+  /* height: 100%; */
+  margin: 0 auto;
+  padding: 35px 35px;
+  display: flex;
+  gap: 35px;
+  background-color: papayawhip;
+}
+/* ------------------------- */
+.left-part {
+  flex: 1;
+  padding: 30px;
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-part {
+  flex: 1.5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* --------------------------------- */
+.block {
+  max-width: 100%;
+}
+.block-title {
+  border-radius: 10px;
+  background: rgb(254, 188, 44);
+  text-align: center;
+  padding: 20px 0;
+}
+.section {
+  border-radius: 10px;
+  background: rgba(254, 188, 44, 0.25);
+  padding: 25px;
+  margin: 10px 0;
+}
+.list {
+  padding-left: 15px;
+  list-style-type: none;
+}
+.list-item {
+  margin-bottom: 6px;
+  position: relative;
+}
+.list-item::before {
+  content: '✓';
+  color: green;
+  font-weight: bold;
+  position: absolute;
+  left: -18px;
+  top: 0;
+}
+.info {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ======================== */
+/* ======================= */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contact,
+.languages,
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  color: rgb(254, 188, 44);
+  text-align: center;
+}
+.line {
+  max-width: 100%;
+  background-color: rgb(254, 188, 44);
+  height: 3px;
+  border: none;
+}
+.phone,
+.mail,
+.city {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  color: white;
+}
+
+.lang-list {
+  margin-left: 18px;
+}
+.lang-item {
+  color: rgb(254, 188, 44);
+}
+
+.skill-list {
+  margin-left: 18px;
+}
+.skill-item {
+  color: rgb(254, 188, 44);
+}
+
+/* ---------------------------- */
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  .page {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .mail a {
+    font-size: 12px;
+  }
+}
