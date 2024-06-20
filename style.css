@@ -22,7 +22,11 @@ a:hover {
   color: rgb(187, 240, 74);
   transform: scale(1.1);
 }
-
+.paragraph {
+  text-indent: 2ch;
+  text-align: justify;
+  font-weight: 600;
+}
 .page {
   max-width: 1270px;
   width: 100%;
@@ -72,6 +76,7 @@ a:hover {
 .list-item {
   margin-bottom: 6px;
   position: relative;
+  text-align: justify;
 }
 .list-item::before {
   content: '✓';
