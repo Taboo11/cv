@@ -190,7 +190,7 @@
             copyButton.style.color = 'green';
             setTimeout(function () {
                 copyButton.textContent = 'copy_all';
-                copyButton.style.color = `rgb(254, 188, 44)`;
+                copyButton.removeAttribute('style');
             }, 1000);
         })   
     </script>
