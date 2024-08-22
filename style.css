@@ -22,6 +22,18 @@ a:hover {
   color: rgb(187, 240, 74);
   transform: scale(1.1);
 }
+.m-icon {
+  cursor: pointer;
+  color: rgb(254, 188, 44);
+  transition: color 0.3s ease;
+}
+.m-icon:hover {
+  color: rgb(187, 240, 74);
+  transform: scale(1.1);
+}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
 .paragraph {
   text-indent: 2ch;
   text-align: justify;
@@ -48,7 +60,6 @@ a:hover {
 
 .right-part {
   flex: 1.5;
-  padding: 0 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
@@ -32,7 +34,10 @@
                     <div class="icon">
                         <img src="./icon/mail.png" alt="mail-icon">
                     </div>
-                    <a href="mailto:vipua66@gmail.com?subject=An important job letter!">vipua66@gmail.com</a>
+                    <a href="mailto:vipua66@gmail.com?subject=An important job letter!">vipua66@gmail.com</a><span
+                        class="material-symbols-outlined m-icon">
+                        copy_all
+                    </span>
                 </div>
                 <div class="city">
                     <div class="icon">
@@ -169,21 +174,22 @@
                     </p>
                 </div>
             </div>
-            <div class="block">
-                <h2 class="block-title">Additional information</h2>
-                <div class="section">
-                    <p class="paragraph">
-                        Active participation in online developer
-                        communities. Continuous improvement of
-                        knowledge and skills through reading articles and
-                        taking courses.
-                    </p>
-                </div>
-            </div>
             <p class="info">Additional information will be
                 provided upon request.</p>
         </div>
     </div>
+    <script>
+        const copyButton = document.querySelector('.m-icon')
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText('vipua66@gmail.com')
+            copyButton.textContent = 'check';
+            copyButton.style.color = 'green';
+            setTimeout(function () {
+                copyButton.textContent = 'copy_all';
+                copyButton.style.color = '';
+            }, 1000);
+        })
+    </script>
 </body>
 
 </html>
