@@ -198,7 +198,7 @@
         copyButton.addEventListener('touchstart', (event) => {
             copyButton.textContent = 'check';
             copyButton.style.color = 'green';
-        })
+        }, { passive: true })
         copyButton.addEventListener('touchend', () => {
             navigator.clipboard.writeText('vipua66@gmail.com')
             copyButton.style.pointerEvents = 'none';
@@ -207,7 +207,7 @@
                 copyButton.removeAttribute('style');
                 copyButton.style.pointerEvents = '';
             }, 1000);
-        })
+        }, { passive: true })
 
     </script>
 </body>
