@@ -192,7 +192,23 @@
                 copyButton.textContent = 'copy_all';
                 copyButton.removeAttribute('style');
             }, 1000);
-        })   
+        })
+
+
+        copyButton.addEventListener('touchstart', (event) => {
+            copyButton.textContent = 'check';
+            copyButton.style.color = 'green';
+        })
+        copyButton.addEventListener('touchend', () => {
+            navigator.clipboard.writeText('vipua66@gmail.com')
+            copyButton.style.pointerEvents = 'none';
+            setTimeout(function () {
+                copyButton.textContent = 'copy_all';
+                copyButton.removeAttribute('style');
+                icon.style.pointerEvents = '';
+            }, 1000);
+        })
+
     </script>
 </body>
 
